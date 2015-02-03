@@ -12,7 +12,7 @@ DOWNLOAD_URL="http://johnvansickle.com/ffmpeg/builds/ffmpeg-git-64bit-static.tar
 echo "DOWNLOAD_URL = " $DOWNLOAD_URL | indent
 
 cd $BUILD_DIR
-mkdir -p $VENDOR_DIR
+mkdir -p $VENDOR_DIR/ffmpeg
 cd $VENDOR_DIR
 curl -L --silent $DOWNLOAD_URL | tar --extract --xz --strip-components=1 --directory=ffmpeg
 
